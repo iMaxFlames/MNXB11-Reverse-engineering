@@ -2,10 +2,11 @@
 #include <string>
 
 auto func1(auto var6, auto argument_1) {
-  for (int index{0}; index < argument_1.size(); index++) {
-    var6 += argument_1[index];
+  for (auto element : argument_1) {
+    var6 += element;
   }
-    return var6;
+
+  return var6;
 }
 
 int main(int number_of_arguments, char *arguments[]) {
