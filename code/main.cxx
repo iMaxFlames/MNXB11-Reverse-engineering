@@ -2,13 +2,9 @@
 #include <string>
 
 auto func1(auto var6, auto argument_1) {
-  auto var7{0};
-  while (true) {
-      var6 += argument_1[var7++];
-      if (var7 >= static_cast<int>(argument_1.size())) {
-        break;
-      }
-    }
+  for (int index{0}; index < argument_1.size(); index++) {
+    var6 += argument_1[index];
+  }
     return var6;
 }
 
